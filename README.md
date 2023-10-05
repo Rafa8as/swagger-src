@@ -4,7 +4,7 @@
 
 Tutoria a cargo de: Laura Acuña
 
-**Repositorio para la entrega "Tercera Entrega Integradora" de la clase numero 39 "Documentar API"**
+**Repositorio para la entrega "DOCUMENTACION DE API" de la clase numero 39 "Documentar API"**
 
 ## Proyecto en Progreso: Servidor Backend para Ecommerce
 
