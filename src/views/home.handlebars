@@ -1,0 +1,27 @@
+<div>
+    <h1 ><a href="http://localhost:8080/"></a> <button>HOme</button></h1>
+
+    <form
+     method="post"
+    
+     action="/api/sessions/logout" 
+    
+    >
+    
+    <p>Bienvenido {{user.email}}</p>
+    <p>Role:{{user.role}} </p>
+    <input type="submit" value="Logout"/>
+
+    </form>
+    <form method='post' action='/api/sessions/restore'>
+		<input type='submit' value='Restore password' class='home-button' />
+	</form>
+  
+        <ul>
+        <li> <a href="./products">Productos</a></li>
+		<li > <a href="./realTimeProducts">Productos actualizados</a></li>
+		<li> <a href="./chat">Chat</a></li>
+		<li> <a href="./carts/">Carrito </a></li>
+        </ul>
+    
+</div>

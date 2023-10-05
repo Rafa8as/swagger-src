@@ -1,0 +1,31 @@
+<div>
+    <div>
+    <h1>Carrito</h1>
+        <div>
+            {{#each payload}}
+            <div>
+               
+                <p>{{this._id.title}}</p>
+                <p>${{this._id.price}}</p>
+                <p>x{{this.quantity}}</p>
+                <p><strong>${{multiply this._id.price this.quantity}}</strong></p>
+            </div>
+            {{/each}}
+        </div>
+
+        <div>
+            <p>TOTAL: ${{getTotal payload}}</p>
+			<button>comprar</button>
+        </div>
+        <form cart='{{cart}}' product='{{product._id}}'>
+			<input type='submit' value='Add to cart' />
+		</form>
+
+        <form >
+			<label>Total $</label>
+			<input type="text" value='{{getTotal payload}}' readonly />
+			<input type='submit' value='Send' class='login-button' />
+		</form>
+
+    </div>
+</div>
